@@ -1,0 +1,118 @@
+<main>
+<h1 id="title">Employee Exit Survey</h1>
+<div id="form-outer">
+  <p id="description">
+    Thank you for being a part of our team! Please rate your experience with our company.
+  </p>
+  <form id="survey-form" method="GET">
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="First Last" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="example@email.com">
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="supervisor-label" for="supervisor">* Supervisor: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="supervisor" class="input-field" placeholder="First Last" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="department" for="department">* Department: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Department" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="position-label" for="position">* Position: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Position" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">How long have you worked for us? (enter in months) </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="emp-suration" id="number" min="1" max="200" class="input-field" placeholder="Months">
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="emp-type">What type of employment did you have with us?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="intern">Intern</option>
+          <option value="temp">Temporary</option>
+          <option value="part">Part Time</option>
+      <option value="full">Full Time</option>
+    </select>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">How likely are you to refer someone to our company?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Not likely<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="rowTab">
+      <div class="labels">
+        <label for="reason">What made you decide to leave? </label>
+      </div>
+      <div class="rightTab">
+        <ul id="reason" style="list-style: none;">
+          <li class="checkbox"><label><input name="reason" value="1" type="checkbox" class="userRatings">End of contract</label></li>
+          <li class="checkbox"><input name="reason" value="2" type="checkbox" class="userRatings">Personal reasons</li>
+          <li class="checkbox"><label><input name="reason" value="3" type="checkbox" class="userRatings">Work environment</label></li>
+          <li class="checkbox"><label><input name="reason" value="4" type="checkbox" class="userRatings">Salary</label></li>
+          <li class="checkbox"><label><input name="reason" value="5" type="checkbox" class="userRatings">Medical benefits</label></li>
+          <li class="checkbox"><label><input name="reason" value="6" type="checkbox" class="userRatings">Other benefits</label></li>
+          <li class="checkbox"><label><input name="reason" value="7" type="checkbox" class="userRatings">Other</label></li>
+        </ul> 
+<input type="text" name="other" id="other" class="input-field"  placeholder="Other">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Additional Comments or Suggestions:</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+  </main>
